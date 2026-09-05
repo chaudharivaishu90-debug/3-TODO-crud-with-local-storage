@@ -1,0 +1,6 @@
+.box{
+    background-color: lightskyblue;
+}
+.box:hover{
+    background-color:darkcyan;
+}

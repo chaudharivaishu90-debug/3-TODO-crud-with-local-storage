@@ -8,54 +8,67 @@
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Crud pratice with local storage3</title>
+    <title>Crud pratice with local storage4</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <div class="card">
-				<div class="card-body">
-                    <div class="cardHeader">
-                        <h4 class=>Basic Detials</h4>
-                        
-                            <form action="" class="bg-secondary" id="form">
-                                <div class="form-group">
-                                    <label for="name" class="text-center">Enter Your Name</label>
-                                    <input required type="text" class="form-control" id="formInput1">
-                                </div>
-                                 <div class="form-group">
-                                    <label for="name" class="text-center">DOB</label>
-                                    <input required type="date" class="form-control" id="formInput2">
-                                </div>
-                                <button class="btn btn-primary btn-block" id="submitButton">submit</button>
-                                <button type="button"class="btn btn-primary btn-block d-none" id="updateButton">update</button>
 
-
-                            </form>
-						
-                        </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4 offset-2">
+                <div class="card" style="background-color: lightgrey;">
+                    <div class="card-header">
+                        <h4 >Todo App</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5>Todays Task</h5>
+                        <form class="form" id="form">
+                            <div>
+                            <label for="Study">Study</label>
+                            <input type="text"class="form-control" id="Study">
+                            </div>
+                            <div>
+                            <label for="Date">Date</label>
+                            <input type="date"class="form-control" id="Date">
+                            </div>
+                             <div>
+                            <label for="Topic">Topic</label>
+                            <input type="text"class="form-control" id="Topic">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-sm-block bg-success " id="SubmitBtn">submit</button>
+                            <button type="button" class="btn btn-sm-block bg-primary " id="UpdateBtn">update</button>
+                                </div>
+                        </form>
                     </div>
                 </div>
-                  </div>
-                  <div class="col-md-6">
-                    <ul class="list-group" id= "list">
-                        <!-- <li class="list-group-item d-flex justify-content-between align-items-center"> -->
-                            <!-- <strong>Gaurav</strong> 
-                             <strong>01/04/1998</strong>-->
-                            <!-- <div>  -->
-                                <!-- <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i> -->
-                                <!-- <i class="fa-solid fa-trash fa-2x fa-2x text-danger"></i> -->
-                       
-                            <!-- </div> -->
-                        <!-- </li> -->
-                    <!-- </ul> -->
-                </div>
-          
+
+            </div>
+        
+            <div class="col-4">
+                <div class="card box">
+                    <div class="card-body">
+        <div class="list-group">
+            <ul class="list-group-item list-unstyled" id="list">
+                <!-- <li>
+                    <div>
+                    <strong >Study</strong>
+                    </div>
+                    <span>01/09/2026</span>
+                    <p>Student crud module</p>
+                    <div class="d-flex justify-content-between">
+                    <i class="fa-sharp fa-solid fa-pen-to-square fa-2x text-primary"></i>
+                    <i class="fa-sharp fa-solid fa-trash fa-2x text-danger"></i>
+                    </div>
+                </li> -->
+            </ul>
         </div>
     </div>
-
-				  </div>
+    </div>
+    </div>
+</div>
+</div>
+    
+    
                   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
